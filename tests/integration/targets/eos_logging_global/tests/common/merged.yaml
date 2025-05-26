@@ -4,7 +4,7 @@
       ansible_connection }}
 
 - block:
-    - name: merge given logging_global config.
+    - name: merge given logging_gl.
       become: true
       register: result
       arista.eos.eos_logging_global: &merged
