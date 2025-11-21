@@ -91,7 +91,6 @@ jobs:
     with:
       ansible_version: ${{ matrix.ansible_version }}
       lab_nodes: '${{ needs.lab-create.outputs.lab_nodes_json }}'
-      http_var_name: ansible_httpapi_port
 
   lab-destroy:
     if: ${{ always() }}
